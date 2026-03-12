@@ -5,7 +5,7 @@ import argparse
 from colorama import Fore, Style, init
 
 # Initialize colorama
-init(autoreset=True)
+#init(autoreset=True)
 
 class ArpSpoofer:
     def __init__(self, target_ip, spoof_ip, interface):
@@ -63,4 +63,5 @@ if __name__ == "__main__":
 
     # Create an ArpSpoofer object and start the spoofing process
     spoofer = ArpSpoofer(target_ip=args.target, spoof_ip=args.spoof, interface=args.interface)
+
     spoofer.run()
